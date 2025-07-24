@@ -25,7 +25,7 @@ app.use(cookieParser());  // aapn authentication kiva authorization sathi json w
 app.use(express.urlencoded({extended:true}));  // use to parse url encodedBodies
 app.use(
 	cors({
-		origin:"http://localhost:3000",   // we will see at frontend time
+		origin:"https://study-forum.vercel.app",   // we will see at frontend time
 		credentials:true,
 
 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Explicitly allow common methods
